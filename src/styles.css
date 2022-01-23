@@ -54,7 +54,7 @@ nav:before {
 }
 
 section > * {
-    transition: .3s ease-in-out all;
+    transition: 1s cubic-bezier(0.22, 1, 0.36, 1) all;
     opacity: 0;
     transform: translateX(100px);
 }
