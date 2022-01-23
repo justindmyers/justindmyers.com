@@ -60,7 +60,6 @@ nav:before {
     @apply -mt-7;
 }
 
-
 header:before, section:before {
     content: '';
     height: 75px;
