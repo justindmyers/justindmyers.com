@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.no-js section > *{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in > * {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 h1:before {
     content: '<h1>';
     position: absolute;
@@ -41,6 +51,12 @@ nav:before {
     content: '<nav>';
     margin-top: -1.75rem;
     @apply absolute font-mono text-sm text-zinc-600;
+}
+
+section > * {
+    transition: .3s ease-in-out all;
+    opacity: 0;
+    transform: translateX(100px);
 }
 
 header:before, section:before {

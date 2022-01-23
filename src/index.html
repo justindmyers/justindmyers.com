@@ -7,17 +7,13 @@
         <meta name="author" content="Justin D Myers" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link
-            href="//fonts.googleapis.com/css?family=Nunito+Sans:400,700,800,900"
-            rel="stylesheet"
-            type="text/css"
-        />
+        <link href="//fonts.googleapis.com/css?family=Nunito+Sans:400,700,800,900" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="/dist/styles.css" />
     </head>
 
-    <body>
+    <body class="no-js">
         <main>
-            <header role="banner">
+            <header role="banner" class="sticky top-0">
                 <div class="flex min-h-screen bg-black text-white">
                     <div class="container m-auto">
                         <div class="relative">
@@ -71,8 +67,8 @@
                 </div>
             </header>
 
-            <section class="py-24">
-                <div class="container mx-auto">
+            <section class="py-24 sticky top-0 bg-white">
+                <div class="container mx-auto overflow-x-hidden">
                     <h2 class="text-3xl lg:text-7xl font-black mb-16 leading-tight">Skills.</h2>
 
                     <div class="flex flex-col lg:grid grid-cols-2 gap-20 lg:w-2/3 mx-auto">
@@ -119,7 +115,7 @@
 
                             <ul>
                                 <li><p>Typescript, JavaScript, HTML5, CSS3, WCAG 2.0 Compliance</p></li>
-                                <li><p>React, Angular, Tailwind, SASS, Webpack, Parcel</p></li>
+                                <li><p>React, Angular, Tailwind, Storybook, SASS, Webpack, Parcel</p></li>
                                 <li><p>Salesforce, Sitecore, Strapi, WordPress, Shopify</p></li>
                                 <li><p>Photoshop, Illustrator, VSCode, Visual Studio</p></li>
                             </ul>
@@ -128,8 +124,8 @@
                 </div>
             </section>
 
-            <section class="pt-24 pb-36 flex bg-black text-white">
-                <div class="container mx-auto">
+            <section class="pt-24 pb-36 flex bg-black text-white sticky top-0">
+                <div class="container mx-auto overflow-x-hidden">
                     <h2 class="text-3xl lg:text-7xl font-black mt-20 mb-16 leading-tight">Work.</h2>
 
                     <ul class="flex flex-col gap-8 lg:w-2/3 mx-auto">
@@ -313,59 +309,58 @@
                 </div>
             </section>
 
-            <section>
-                <div class="pt-36 pb-24">
-                    <div class="container mx-auto">
-                        <h2 class="mb-16 leading-tight text-3xl lg:text-7xl font-black">Education.</h2>
+            <section class="pt-36 pb-24 bg-white min-h-screen">
+                <div class="container mx-auto overflow-x-hidden">
+                    <h2 class="mb-16 leading-tight text-3xl lg:text-7xl font-black">Education.</h2>
 
-                        <div class="lg:w-2/3 mx-auto">
-                            <div class="flex flex-col lg:grid gap-20 grid-cols-2">
-                                <div class="eight columns">
-                                    <h3 class="text-xl lg:text-2xl font-bold">Education</h3>
+                    <div class="lg:w-2/3 mx-auto">
+                        <div class="flex flex-col lg:grid gap-20 grid-cols-2">
+                            <div class="eight columns">
+                                <h3 class="text-xl lg:text-2xl font-bold">Education</h3>
 
-                                    <ul>
-                                        <li>
-                                            University of Texas at Dallas, Bachelor of Science in Computer Science, 2004
-                                        </li>
-                                    </ul>
+                                <ul>
+                                    <li>
+                                        University of Texas at Dallas, Bachelor of Science in Computer Science, 2004
+                                    </li>
+                                </ul>
 
-                                    <h3 class="text-xl lg:text-2xl font-bold mt-6">Certifications</h3>
-                                    <ul>
-                                        <li>
-                                            Psychological Operations Specialist, JFK Special Warfare Center and School,
-                                            2006
-                                        </li>
-                                        <li>Paratrooper, US Army Airborne School, 2007</li>
-                                        <li>Pathfinder, US Army Pathfinder School, 2010</li>
-                                        <li>Commandant's List, Warrior Leader Course, 2010</li>
-                                    </ul>
-                                </div>
+                                <h3 class="text-xl lg:text-2xl font-bold mt-6">Certifications</h3>
+                                <ul>
+                                    <li>
+                                        Psychological Operations Specialist, JFK Special Warfare Center and School, 2006
+                                    </li>
+                                    <li>Paratrooper, US Army Airborne School, 2007</li>
+                                    <li>Pathfinder, US Army Pathfinder School, 2010</li>
+                                    <li>Commandant's List, Warrior Leader Course, 2010</li>
+                                </ul>
+                            </div>
 
-                                <div class="four columns">
-                                    <h3 class="text-xl lg:text-2xl font-bold">Awards &amp; Honors</h3>
+                            <div class="four columns">
+                                <h3 class="text-xl lg:text-2xl font-bold">Awards &amp; Honors</h3>
 
-                                    <ul>
-                                        <li>Key Contributor Award, Charles Schwab, 2013</li>
-                                    </ul>
+                                <ul>
+                                    <li>Key Contributor Award, Charles Schwab, 2013</li>
+                                </ul>
 
-                                    <h4 class="mt-6 font-bold">US Army Reserve</h4>
-                                    <ul>
-                                        <li>Army Commendation Medal Army</li>
-                                        <li>Good Conduct Medal</li>
-                                        <li>National Defense Service Medal</li>
-                                        <li>Global War on Terrorism Medal</li>
-                                        <li>Iraq Campaign Medal</li>
-                                        <li>Army Service Ribbon</li>
-                                        <li>Armed Forces Reserve Medal</li>
-                                        <li>Parachutist Badge</li>
-                                        <li>Pathfinder Badge</li>
-                                    </ul>
-                                </div>
+                                <h4 class="mt-6 font-bold">US Army Reserve</h4>
+                                <ul>
+                                    <li>Army Commendation Medal Army</li>
+                                    <li>Good Conduct Medal</li>
+                                    <li>National Defense Service Medal</li>
+                                    <li>Global War on Terrorism Medal</li>
+                                    <li>Iraq Campaign Medal</li>
+                                    <li>Army Service Ribbon</li>
+                                    <li>Armed Forces Reserve Medal</li>
+                                    <li>Parachutist Badge</li>
+                                    <li>Pathfinder Badge</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
+
+        <script src="./scripts.js"></script>
     </body>
 </html>
