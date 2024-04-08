@@ -12,11 +12,11 @@ header, section {
 }
 
 p {
-    @apply relative mt-8;
+    @apply relative mt-4;
 }
 
 .container {
-    @apply px-10;
+    @apply px-8;
 }
 
 .fade-in .container {
@@ -32,32 +32,6 @@ section .container {
 
 h1:before, h2:before, h3:before, h4:before, p:before, nav:before {
     @apply absolute font-mono font-normal text-sm leading-tight text-zinc-600;
-}
-
-h1:before {
-    content: '<h1>';
-
-    @apply -mt-4 lg:-mt-2;
-}
-
-h2:before {
-    content: '<h2>';
-    @apply -mt-3;
-}
-
-h3:before {
-    content: '<h3>';
-    @apply -mt-4;
-}
-
-p:before {
-    content: '<p>';
-    @apply -mt-5;
-}
-
-nav:before {
-    content: '<nav>';
-    @apply -mt-7;
 }
 
 header:before, section:before {
