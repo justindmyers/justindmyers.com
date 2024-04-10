@@ -2,57 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-.no-js section .container{
+@media not print {
+  .no-js section .container {
     opacity: 1;
     transform: translateX(0);
-}
+  }
 
-header, section {
+  header,
+  section {
     position: relative;
-}
+  }
 
-p {
+  p {
     @apply relative mt-4;
-}
+  }
 
-.container {
+  .container {
     @apply px-8;
-}
+  }
 
-.fade-in .container {
+  .fade-in .container {
     opacity: 1;
     transform: translateX(0);
-}
+  }
 
-section .container {
+  section .container {
     transition: 1s cubic-bezier(0.22, 1, 0.36, 1) all;
     transform: translateX(100px);
     @apply opacity-0;
-}
+  }
 
-h1:before, h2:before, h3:before, h4:before, p:before, nav:before {
+  h1:before,
+  h2:before,
+  h3:before,
+  h4:before,
+  p:before,
+  nav:before {
     @apply absolute font-mono font-normal text-sm leading-tight text-zinc-600;
-}
+  }
 
-header:before, section:before {
-    content: '';
+  header:before,
+  section:before {
+    content: "";
     height: 75px;
     clip-path: polygon(0 0, 75% 0, 0 100%);
     @apply block absolute top-0 left-0 w-full bg-white z-20;
-}
+  }
 
-section:before {
+  section:before {
     top: -1px;
-}
+  }
 
-section:after {
-    content: '';
+  section:after {
+    content: "";
     top: -74px;
     height: 75px;
     clip-path: polygon(100% 0, 100% 100%, 25% 100%);
     @apply block absolute w-full bg-white z-20;
-}
+  }
 
-section.bg-black:after {
+  section.bg-black:after {
     @apply bg-transparent;
+  }
 }
